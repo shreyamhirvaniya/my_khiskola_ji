@@ -1,0 +1,97 @@
+
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:  sour-gummy-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Grid with flexible columns */
+    gap: 60px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px;
+}
+
+/* Square Container Styles */
+.square {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for squares */
+.square:hover {
+    transform: translateY(-10px);
+}
+
+h2 {
+    font-size: 2 rem;
+    margin-bottom: 15px;
+    color: #333;
+    line-height: 1.4;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #FF4081;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #F50057;
+}
+
+/* Mobile-first responsive styles (for smaller screens) */
+
+/* Adjust the font and layout for small screens */
+@media (max-width: 768px) {
+    h2 {
+        font-size:3 rem; /* Slightly smaller text on tablets */
+    }
+
+    button {
+        font-size: 3 rem; /* Slightly smaller button text */
+        padding: 8px 16px;
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* Stack the squares in one column on smaller screens */
+    }
+
+    .square {
+        padding: 15px;
+    }
+}
+
+/* Further adjustments for very small screens (phones) */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2 rem; /* Even smaller font size */
+    }
+
+    button {
+        font-size: 4 rem; /* Even smaller button text */
+        padding: 6px 12px;
+    }
+}
