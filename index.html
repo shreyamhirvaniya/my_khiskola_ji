@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=divice-width initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY DEAREST KHISKOLA JI 💖</title>
     <style>
         html, body {
@@ -49,6 +48,34 @@
         }
 
         /* Responsive adjustments */
+        @media (max-width: 1024px) {
+            img {
+                width: 25%; /* Image adjustment for smaller screens */
+                bottom: 2rem;
+                right: 2rem;
+            }
+            h1 {
+                font-size: 3rem;
+                margin: 40px 20px 20px 20px; /* Adjust margins for better spacing */
+                text-align: center;
+            }
+            h2 {
+                font-size: 1.8rem;
+                margin: 10px 20px;
+                text-align: center;
+            }
+            .btn {
+                margin: 30px auto;
+                text-align: center;
+            }
+            a {
+                padding: 10px 20px;
+                font-size: 20px;
+                display: inline-block;
+            }
+        }
+
+        /* For devices with widths smaller than 600px (e.g. iPhone 15 Plus, etc.) */
         @media (max-width: 600px) {
             img {
                 width: 80%; /* Shrink image to fit on mobile screens */
@@ -56,12 +83,12 @@
                 right: 3.5em;
             }
             h1 {
-                font-size:2.5rem;
+                font-size: 2.5rem;
                 margin: 50px 20px 0 20px; /* Reduce top margin and add responsive left/right margin */
                 text-align: center;
             }
             h2 {
-                font-size: 1.5 rem;
+                font-size: 1.5rem;
                 margin: 10px 20px;
                 text-align: center;
             }
